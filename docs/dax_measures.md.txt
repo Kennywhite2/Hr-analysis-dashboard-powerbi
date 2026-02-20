@@ -1,0 +1,23 @@
+# DAX Measures (HR Analytics)
+
+Below are typical KPI definitions used in the dashboard (names may vary depending on your dataset).
+
+## Headcount
+**Definition:** Distinct count of employees (or active employees depending on the model).
+- Example: `Headcount = DISTINCTCOUNT(HR[EmployeeID])`
+
+## Attrition
+**Definition:** Count of employees where Attrition = "Yes".
+- Example: `Attrition = CALCULATE([Headcount], HR[Attrition] = "Yes")`
+
+## Attrition Rate
+**Definition:** Attrition / Headcount.
+- Example: `Attrition Rate = DIVIDE([Attrition], [Headcount])`
+
+## Active Employees
+**Definition:** Employees where Attrition = "No".
+- Example: `Active = CALCULATE([Headcount], HR[Attrition] = "No")`
+
+## Average Age
+**Definition:** Average age of employees.
+- Example: `Avg Age = AVERAGE(HR[Age])`

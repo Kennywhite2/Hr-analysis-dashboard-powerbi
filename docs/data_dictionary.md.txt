@@ -1,0 +1,16 @@
+# Data Dictionary (HR Dataset)
+
+This document describes key fields used in the HR Analytics dashboard.
+
+| Column | Description |
+|-------|-------------|
+| employee_id / emp_id | Unique employee identifier |
+| department | Employee department (e.g., Sales, R&D, HR) |
+| job_role | Job role/title |
+| gender | Gender of employee |
+| age | Employee age |
+| age_group | Age buckets (e.g., Under 25, 25–34, 35–44, 45–54, Over 55) |
+| education | Education level |
+| education_field | Field of education |
+| attrition | Whether employee left (Yes/No) |
+| job_satisfaction | Job satisfaction rating (e.g., 1–4) |
